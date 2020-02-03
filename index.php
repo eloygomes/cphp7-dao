@@ -42,3 +42,22 @@ $usuario->login($a, $B);
 echo $usuario;
 
 */
+/*
+$aluno = new Usuarios("Piracanjuba", "PI-RA-CAN-JU-BA");
+/*
+$aluno->setDeslogin("DR. Piraporinhas");
+$aluno->setDessenha("Senha do DR. Piraporinhas");
+
+
+$aluno->insert();
+
+echo $aluno;
+*/
+
+$usuarios = new Usuarios();
+
+$usuarios->loadById(8);
+
+$usuarios->update("Prof. Girafalles", "AquelaVelhaNaoAdocaOMeuCafe");
+
+echo $usuarios;
