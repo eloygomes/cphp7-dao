@@ -53,11 +53,20 @@ $aluno->insert();
 
 echo $aluno;
 */
-
+/*
 $usuarios = new Usuarios();
 
 $usuarios->loadById(8);
 
 $usuarios->update("Prof. Girafalles", "AquelaVelhaNaoAdocaOMeuCafe");
+
+echo $usuarios;
+*/
+
+$usuarios = new Usuarios();
+
+$usuarios->loadById(6);
+
+$usuarios->delete();
 
 echo $usuarios;
